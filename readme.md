@@ -69,6 +69,13 @@ The above command will start the frontend application on [http://localhost:3000/
 ```sh
 cd backend
 ```
+### 5. **Configure Strapi**
 
-## Thanks for read
+a. Allow permissions for necessary operations on the [Feed] content-type for Public users.
+![a](https://user-images.githubusercontent.com/18682719/199849622-2336de70-8034-42e2-ac84-826668d50c8a.png)
+
+b. Allow permissions for necessary operations on the [Category] content-type for Public users.
+![b](https://user-images.githubusercontent.com/18682719/199849860-fdf4d3fb-6708-4417-9d7b-b7f1066e85a4.png)
+
+## Thanks for read.
 We're still working on it.
