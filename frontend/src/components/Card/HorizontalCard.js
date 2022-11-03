@@ -8,9 +8,7 @@ import {
     Box,
     Flex,
     Stack,
-    HStack,
     Image,
-    Link,
     Text,
     Heading
 } from '@chakra-ui/react';

@@ -2,32 +2,25 @@ import React from 'react'
 import {
   Box,
   Flex,
-  Avatar,
   Button,
-
   useColorModeValue,
   Stack,
   useColorMode,
-  Center,
   Image,
   Popover,
   PopoverTrigger,
   PopoverContent,
   PopoverHeader,
   PopoverBody,
-  PopoverFooter,
   PopoverArrow,
-  PopoverCloseButton,
-  PopoverAnchor,
+  PopoverCloseButton
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import Logo from "../../assets/logo.png";
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
-  const signIn = () => {
-
-  }
+  
   return (
     <>
       <Box bg={useColorModeValue('white.100', 'white.900')} px="60px" boxShadow='xl' >
@@ -57,8 +50,6 @@ const Navbar = () => {
               <Button onClick={toggleColorMode}>
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
               </Button>
-
-              
             </Stack>
           </Flex>
         </Flex>

@@ -160,8 +160,8 @@ const HomePage = () => {
 
     const handleOnClick = (event) => {
         const viewSetting = event.target.id;
-        if(viewSetting === 'cards' && horizontalLayout === false || 
-            viewSetting === 'list' && horizontalLayout === true ){
+        if((viewSetting === 'cards' && horizontalLayout === false) || 
+            (viewSetting === 'list' && horizontalLayout === true )){
                 return;
         }else{
             if(viewSetting === 'list'){
