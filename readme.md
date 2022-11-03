@@ -1,5 +1,5 @@
-1. [**frontend**](https://github.com/ghoshnirmalya/nextjs-strapi-boilerplate/tree/master/frontend): Next.js application
-2. [**backend**](https://github.com/ghoshnirmalya/nextjs-strapi-boilerplate/tree/master/backend): Dockerized Strapi application
+1. [**frontend**](https://github.com/MarioDev64/strapi-reactjs-blog/tree/main/frontend): React.js application
+2. [**backend**](https://github.com/MarioDev64/strapi-reactjs-blog/tree/main/backend): Strapi application
 
 - [Overview](#overview)
 - [Requirements](#requirements)
@@ -11,6 +11,7 @@
   - [2. **Install necessary dependencies for the frontend application**](#2-install-necessary-dependencies-for-the-frontend-application)
   - [3. **Start the frontend application**](#3-start-the-frontend-application)
   - [4. **Go inside the directory of the backend package on another terminal window**](#4-go-inside-the-directory-of-the-backend-package-on-another-terminal-window)
+  - [5. **Start the backend application**](#5-Start-the-backend-application)
   - [Frontend application](#frontend-application)
   - [Backend application](#backend-application)
 
@@ -69,7 +70,7 @@ The above command will start the frontend application on [http://localhost:3000/
 cd backend && yarn install
 ```
 
-### 4. **Start the backend applicationw**
+### 5. **Start the backend application**
 
 ```sh
 yarn develop
@@ -77,7 +78,7 @@ yarn develop
 
 The above command will start the backend application on [http://localhost:1337/](http://localhost:1337).
 
-### 5. **Configure Strapi**
+### 6. **Configure Strapi**
 
 a. Allow permissions for necessary operations on the [Feed] content-type for Public users.
 ![a](https://user-images.githubusercontent.com/18682719/199849622-2336de70-8034-42e2-ac84-826668d50c8a.png)
