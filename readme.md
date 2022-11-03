@@ -26,7 +26,6 @@ This blog is built using the following technologies:
 It supports GraphQL Query and Mutation out of the box.
 
 ## Requirements
-
 1. [Node.js](https://nodejs.org/)
 2. [npm](https://www.npmjs.com/)
 
@@ -64,11 +63,20 @@ yarn start
 
 The above command will start the frontend application on [http://localhost:3000/](http://localhost:3000).
 
-### 4. **Go inside the directory of the backend package on another terminal window**
+### 4. **Go inside the directory of the backend package on another terminal window and install necessary dependencies**
 
 ```sh
-cd backend
+cd backend && yarn install
 ```
+
+### 4. **Start the backend applicationw**
+
+```sh
+yarn develop
+```
+
+The above command will start the backend application on [http://localhost:1337/](http://localhost:1337).
+
 ### 5. **Configure Strapi**
 
 a. Allow permissions for necessary operations on the [Feed] content-type for Public users.
