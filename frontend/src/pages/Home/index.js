@@ -146,7 +146,7 @@ const CATEGORIES = gql`
 `
 const HomePage = () => {
     const { loading, error, data } = useQuery(CATEGORIES);
-    const [ categorySelected, setCategorySelected ] = useState(null);
+    const [ categorySelected, setCategorySelected ] = useState('default');
     const [ horizontalLayout, setHorizontalLayout ] = useState(false);
 
     if(error) return <Text>{error}</Text>
@@ -177,6 +177,7 @@ const HomePage = () => {
             <Flex justifyContent="space-around" >
                 <Box w="260px" maxH="40px">
                     <Select icon={<TriangleDownIcon />} size="md" onChange={handleChange}>
+                        <option key="default" value="default">All</option>
                         {data?.categories?.data?.map(category => (
                              <option key={category.id} value={category.id}>{category.attributes?.name}</option>
                         ))}
@@ -191,7 +192,7 @@ const HomePage = () => {
                 </Stack>
             </Flex>
             <Flex flexWrap="wrap" gap="30px" pt="60px" justifyContent="center" pb={20}>
-                { categorySelected ? <QueryFeedsById categorySelected={categorySelected} horizontalLayout={horizontalLayout} /> : <QueryFeedsByDefault horizontalLayout={horizontalLayout} /> }
+                { categorySelected === 'default' ? <QueryFeedsByDefault horizontalLayout={horizontalLayout} /> : <QueryFeedsById categorySelected={categorySelected} horizontalLayout={horizontalLayout} /> }
             </Flex>
         </Box>
     )
