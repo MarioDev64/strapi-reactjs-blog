@@ -33,7 +33,7 @@ const Navbar = () => {
             <Stack direction={'row'} spacing={7}>
               <Popover>
                 <PopoverTrigger>
-                  <Button w="180px" bgColor="#222F38" _hover={{
+                  <Button w="180px" bgColor="#222F38" color="white" _hover={{
                     background: "#E3216C",
                     color: "white",
                   }}>
